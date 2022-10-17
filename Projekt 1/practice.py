@@ -66,3 +66,69 @@ print(century_from_year(2010))
 print(century_from_year(1801))
 
 
+#sorting a list 
+
+numbers = ["1", "2", "3"]
+string = ["asc", "desc", "none"]
+
+string = "asc"
+
+def function (numbers, string):
+    if string == "asc":
+        print (numbers.sort)
+    
+
+#Convert a decimal number into a binary 
+
+def DecimalToBinary(num):
+    if num >=1:
+        DecimalToBinary(num//2)
+    print (num%2, end = '')
+
+if __name__ == '__main__':
+    dec_val = 24
+
+    DecimalToBinary(dec_val)
+
+#chonsonant or vowel? 
+ch = input("Enter the character:")
+if (ch=='a' or ch=='e' or ch=='i' or ch=='o' or ch=='u' or ch=='A' or ch=='E' or ch=='I' or ch=='O' or ch=='U'):
+    print("Vowel")
+else: 
+    print("chonsonant")
+
+#counting the vowels in a string 
+inputString = str(input("Please type a sentence:"))
+a = "a"
+A = "A"
+e = "e"
+E = "E"
+i = "i"
+I = "I"
+o = "o"
+O = "O"
+u = "u"
+U = "U"
+
+acount = 0 
+ecount = 0
+icount = 0
+ocount = 0
+ucount = 0
+
+if A or a in str:
+    acount = acount+1
+
+if E or e in str:
+    ecount = ecount+1
+
+if I or i in str:
+    icount = icount+1
+
+if O or o in str:
+    ocount = ocount+1
+
+if U or u in str:
+    ucount = ucount+1
+ 
+print (acount, ecount, icount, ocount, ucount)
