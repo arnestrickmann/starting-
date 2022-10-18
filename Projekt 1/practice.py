@@ -132,3 +132,20 @@ if U or u in str:
     ucount = ucount+1
  
 print (acount, ecount, icount, ocount, ucount)
+
+#classes 
+#what features does a person have? 
+
+class Person:
+    def __init__(self, age, weight, height, first_name, last_name, catch_phrase):
+        self.age = age
+        self.weight = weight 
+        self.height = height
+        self.first_name = first_name
+        self.last_name = last_name
+        self.catch_phrase = catch_phrase
+
+#we can now start using this class somewhere else in our code
+user = Person(21, 84, 1.83, "Arne", "Strickmann", "You know nothing, Arne Strickmann")
+
+print(user.catch_phrase)
